@@ -126,17 +126,6 @@ body {
 }
 
 
-.fx {
-    display: flex;
-    gap: var(--gap-size);
-}
-
-.fx>* {
-    flex: 1;
-    min-width: 0;
-}
-
-
 .mg01 {}
 
 .mg01>ul>li {
