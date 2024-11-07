@@ -1,0 +1,115 @@
+#header {
+    position: relative;
+    z-index: 999;
+}
+
+#header h1 svg {
+    height: 8.8rem;
+}
+
+#header .w_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 4rem;
+}
+
+#header .gnb>ul>li>a {
+    display: block;
+    line-height: 11.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.top_banner {
+    background: #3e3e3e;
+    text-align: center;
+}
+
+.top {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    border-bottom: 1px solid var(--line-color);
+}
+
+#main_visual {
+    position: relative;
+}
+
+#main_visual .w_inner {
+    clip-path: polygon(100% 0, 100% 100%, 120px 100%, 0 calc(100% - 120px), 0 0);
+}
+
+#main_visual .w_inner .itm {
+    height: 64rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    filter: grayscale(1);
+    transition: 0.5s;
+
+
+
+}
+
+#main_visual .w_inner .itm.swiper-slide-active {
+    filter: grayscale(0);
+}
+
+#main_visual .w_inner .itm01 {
+    background-image: url(../images/darm_main01.jpg);
+}
+
+#main_visual .w_inner .itm02 {
+    background-image: url(../images/darm_main02.jpg);
+}
+
+#main_visual .w_inner .itm03 {
+    background-image: url(../images/darm_main03.jpg);
+}
+
+#main_visual .w_inner .itm04 {
+    background-image: url(../images/darm_main04.jpg);
+}
+
+#main_visual .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: var(--inner-size);
+    width: 100%;
+}
+
+#main_visual .scroll {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 8rem;
+}
+
+#main_visual h2 .bzf {
+    background: #fff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
+}
+
+
+#main_visual h2 em {
+    display: block;
+    white-space: nowrap;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 0.7;
+
+    text-indent: -1rem;
+}
