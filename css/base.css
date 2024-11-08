@@ -59,7 +59,7 @@ address {
 
 strong,
 b {
-    font-weight: normal;
+    font-weight: inherit;
 }
 
 .blind {

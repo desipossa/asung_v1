@@ -26,17 +26,61 @@
 }
 
 .top_banner {
-    background: #2d2c33;
+    background: #464646;
     color: #fff;
-    font-size: 3.2rem;
-    font-weight: 800;
+
     text-align: center;
+}
+
+.top_banner a {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+
+.top_banner a span {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.top_banner a strong {
+    font-weight: 800;
+    font-size: 3.2rem;
 }
 
 .top {
     font-size: 1.2rem;
     line-height: 2.4rem;
     border-bottom: 1px solid var(--line-color);
+}
+
+#quick {
+    position: fixed;
+    top: 32rem;
+    right: 9rem;
+
+    z-index: 4;
+
+    background: var(--w-color);
+    border: 1px solid var(--line-color);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+
+}
+
+#quick a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    padding: 1.8rem;
+}
+
+#quick a~a {
+    border-top: 1px solid var(--line-color);
 }
 
 #main_visual {
@@ -70,7 +114,7 @@
 }
 
 #main_visual .w_inner .itm02 {
-    background-image: url(../images/darm_main02.jpg);
+    background-image: url(../images/darm_main05.jpg);
 }
 
 #main_visual .w_inner .itm03 {
@@ -95,7 +139,7 @@
     top: auto;
     bottom: 0;
     left: auto;
-    right: 8rem;
+    right: 6rem;
 }
 
 #main_visual h2 .bzf {
@@ -115,4 +159,50 @@
     line-height: 0.7;
 
     text-indent: -1rem;
+}
+
+#main_visual .page {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    max-width: 32rem;
+
+    transform: translate(-50%, 0);
+}
+
+#main_visual .page span {
+    background: var(--w-color);
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.4rem;
+
+    opacity: 0.8;
+}
+
+#main_visual .page span.swiper-pagination-bullet-active {
+    width: 8rem;
+    transition: 0.5s;
+}
+
+#main_visual .contect {
+    position: absolute;
+    bottom: 0;
+    right: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+
+    width: 20rem;
+    height: 20rem;
+
+    color: var(--w-color);
+    background: var(--secondary-color);
+    border-radius: 50%;
+
+    transform: translate(0, 50%);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+
 }

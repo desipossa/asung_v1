@@ -18,5 +18,10 @@ $(function () {
             disableOnInteraction: false,
 
         },
+
+        pagination: {
+            el: '#main_visual .page',
+            clickable: true,
+        },
     })
 })
