@@ -4,7 +4,7 @@
     --gap-size: 30px;
     --padding-size: 80px;
 
-    --primary-color: #fbff02;
+    --primary-color: #464646;
     --secondary-color: #ffce34;
     --w-color: #fff;
 
@@ -86,6 +86,10 @@ body {
     padding: var(--padding-size) 0;
 }
 
+.title {
+    margin-bottom: 4rem;
+}
+
 .title h2 {
     font-size: 4rem;
     font-weight: 700;
@@ -123,6 +127,16 @@ body {
 
 .bg {
     background: var(--background-color);
+}
+
+.content_fx {
+    display: flex;
+    gap: var(--gap-size);
+}
+
+.content_fx>* {
+    flex: 1;
+    min-width: 0;
 }
 
 
@@ -169,7 +183,56 @@ body {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.wp {
+    position: relative;
+}
 
+.wp::before {
+    content: "전액국비지원";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    bottom: auto;
+
+    transform: translate(-50%, 0);
+
+    padding: 0 2.4rem;
+    line-height: 22px;
+
+    white-space: nowrap;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border: 2px solid #ff6347;
+    background: var(--w-color);
+    border-radius: 0.8rem;
+}
+
+.wp::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 10px) rotate(45deg);
+    border-right: 2px solid #ff6347;
+    border-bottom: 2px solid #ff6347;
+    background: var(--w-color);
+
+    width: 10px;
+    height: 10px;
+}
+
+.d_btn {
+    background: var(--color);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.d_btn svg {
+    stroke: var(--w-color);
+    vertical-align: top;
+}
 
 .a_btn {
     position: relative;
@@ -214,23 +277,6 @@ body {
 }
 
 
-.a_btn::after {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-left: 16px;
-    background: url(../images/arrow-up-right.svg) no-repeat center center/cover;
-    vertical-align: -6px;
-}
-
-.a_btn.w::after {
-    background: url(../images/arrow-up-right-c.svg) no-repeat center center/cover;
-}
-
-.a_btn.w:hover::after {
-    background: url(../images/arrow-up-right.svg) no-repeat center center/cover;
-}
 
 
 .scroll {
