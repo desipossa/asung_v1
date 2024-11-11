@@ -194,11 +194,11 @@ body {
 .wp::before {
     content: "전액국비지원";
     position: absolute;
-    top: -10px;
+    top: 50%;
     left: 50%;
     bottom: auto;
 
-    transform: translate(-50%, 0);
+    transform: translate(-50%, calc(-50% - 50px));
 
     padding: 0 2.4rem;
     line-height: 22px;
@@ -210,15 +210,16 @@ body {
 
     border: 2px solid #ff6347;
     background: var(--w-color);
+    color: var(--body-color);
     border-radius: 0.8rem;
 }
 
 .wp::after {
     content: "";
     position: absolute;
-    top: auto;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 10px) rotate(45deg);
+    transform: translate(-50%, calc(-50% - 38px)) rotate(45deg);
     border-right: 2px solid #ff6347;
     border-bottom: 2px solid #ff6347;
     background: var(--w-color);
@@ -422,6 +423,35 @@ body {
     background: linear-gradient(to right top, #0a96ba, #032777, #333333);
     color: transparent;
     -webkit-background-clip: text; */
+}
+
+.st {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+    border-bottom: 1px solid var(--body-color);
+}
+
+.st a {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    float: right;
+}
+
+.st a::after {
+    content: "+";
+    margin-left: 4px;
+    font-size: 1.4rem;
+}
+
+.n_list {}
+
+.n_list a {
+    display: block;
+    line-height: 4rem;
+    border-bottom: 1px solid var(--line-color);
 }
 
 .dot_list {
