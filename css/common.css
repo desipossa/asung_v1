@@ -90,6 +90,10 @@ body {
     margin-bottom: 4rem;
 }
 
+.title.w {
+    color: var(--w-color);
+}
+
 .title h2 {
     font-size: 4rem;
     font-weight: 700;

@@ -104,6 +104,7 @@
 }
 
 #main_visual .w_inner .itm {
+    position: relative;
     height: 64rem;
 
     background-repeat: no-repeat;
@@ -115,6 +116,17 @@
 
 
 
+}
+
+#main_visual .w_inner .itm .movie {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+#main_visual .w_inner .itm .movie video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #main_visual .w_inner .itm.swiper-slide-active {
@@ -141,6 +153,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 2;
     transform: translate(-50%, -50%);
 
     max-width: var(--inner-size);
@@ -239,6 +252,11 @@
 
 #main_content01 .content .itm div {
     line-height: 1.5;
+}
+
+
+#main_content02 {
+    background: url(../images/main_curri.png);
 }
 
 #footer {
