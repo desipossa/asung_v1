@@ -240,3 +240,47 @@
 #main_content01 .content .itm div {
     line-height: 1.5;
 }
+
+#footer {
+
+    background: var(--body-color);
+}
+
+#footer a {
+    display: block;
+    line-height: 1.5;
+    color: var(--w-color)
+}
+
+#footer .footer_top {
+    padding: 6.4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer .lnk>ul {
+    display: flex;
+    gap: 8rem;
+}
+
+#footer .lnk>ul>li>a {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1.6rem;
+}
+
+#footer .footer_bottom {
+    padding: 4rem 0;
+}
+
+#footer .footer_bottom .l_list a::after {
+    background: var(--w-color);
+}
+
+#footer .footer_bottom .l_list {
+    margin-bottom: 1.6rem;
+}
+
+#footer .footer_bottom p {
+    font-size: 1.4rem;
+    color: var(--w-color);
+}
