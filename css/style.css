@@ -257,6 +257,11 @@
 
 #main_content02 {
     background: url(../images/main_curri.png) no-repeat fixed center center/cover;
+    clip-path: polygon(100% 0, 100% 100%, 120px 100%, 0 calc(100% - 120px), 0 0);
+}
+
+#main_content02 .w_inner {
+    clip-path: polygon(100% 0, 100% 100%, 120px 100%, 0 calc(100% - 120px), 0 0);
 }
 
 #footer {
