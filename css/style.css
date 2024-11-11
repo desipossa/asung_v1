@@ -256,7 +256,7 @@
 
 
 #main_content02 {
-    background: url(../images/main_curri.png);
+    background: url(../images/main_curri.png) no-repeat fixed center center/cover;
 }
 
 #footer {
