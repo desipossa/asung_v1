@@ -388,10 +388,15 @@
     margin-bottom: 1.6rem;
 }
 
-#footer .footer_bottom p {
+#footer .footer_bottom span {
+    display: inline-block;
     font-size: 1.4rem;
     color: var(--w-color);
     white-space: nowrap;
+}
+
+#footer .footer_bottom .copy {
+    opacity: 0.5;
 }
 
 @media (max-width:768px) {
