@@ -391,6 +391,7 @@
 #footer .footer_bottom p {
     font-size: 1.4rem;
     color: var(--w-color);
+    white-space: nowrap;
 }
 
 @media (max-width:768px) {
