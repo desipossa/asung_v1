@@ -156,6 +156,18 @@ body {
 }
 
 
+.ctl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8rem;
+}
+
+.ctl .page {
+    width: auto !important;
+}
+
+
 .ctl .page span {
     background: var(--color);
     width: 1.2rem;

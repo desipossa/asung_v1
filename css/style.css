@@ -1,6 +1,10 @@
 #header {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 998;
+
+    background: var(--w-color);
+    /* border: 1px solid var(--line-color); */
 }
 
 #header a {
@@ -46,6 +50,7 @@
 }
 
 .top_banner {
+
     background: #464646;
     color: #fff;
 
