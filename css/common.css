@@ -2,10 +2,10 @@
     --wide-size: 1700px;
     --inner-size: 1410px;
     --gap-size: 30px;
-    --padding-size: 80px;
+    --padding-size: 120px;
 
-    --primary-color: #464646;
-    --secondary-color: #ffce34;
+    --primary-color: #d80000;
+    --secondary-color: #ffc400;
     --w-color: #fff;
 
     --line-color: #dddddd;
@@ -65,6 +65,14 @@ body {
 .w_inner.right {
     max-width: calc((100% - var(--wide-size))/2 + var(--wide-size));
     margin: 0 0 0 auto;
+}
+
+
+.l_inner {
+    position: relative;
+    height: 0;
+    max-width: var(--wide-size);
+    margin: 0 auto;
 }
 
 
@@ -143,8 +151,51 @@ body {
     min-width: 0;
 }
 
+.content_gr {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gap-size);
+}
 
-.mg01 {}
+.content_gr100 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--gap-size);
+}
+
+.content_gr img {
+    width: 100%;
+}
+
+
+.ctl .page span {
+    background: var(--color);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.6rem;
+
+    opacity: 0.8;
+}
+
+.ctl .page span.swiper-pagination-bullet-active {
+    background: var(--primary-color);
+}
+
+
+.ctl .page.ox span.swiper-pagination-bullet-active {
+    width: 8rem;
+    transition: 0.5s;
+}
+
+
+.mg01 {
+    position: relative;
+}
+
+.mg01>ul {
+    display: flex;
+    gap: 4rem;
+}
 
 .mg01>ul>li {
     position: relative;
@@ -186,6 +237,85 @@ body {
 .mg01>ul>li ul>li~li a {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width:768px) {
+    .mg01 {
+        position: fixed;
+        top: 0;
+        left: -100%;
+
+        height: 100vh;
+        width: 100%;
+
+        background: rgba(0, 0, 0, 0.75);
+
+
+
+
+    }
+
+    .mg01>ul {
+        width: calc(100% - 9rem);
+        height: 100vh;
+        border-right: 1px solid var(--body-color);
+        background: var(--w-color);
+        padding: 12rem 3.2rem;
+
+
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .mg01>ul>li {
+        position: relative;
+    }
+
+    .mg01>ul>li>a {
+        line-height: 4.8rem !important;
+        border-bottom: 1px solid var(--line-color);
+        font-size: 1.8rem !important;
+    }
+
+    .mg01>ul>li ul {
+
+        display: none;
+
+        position: static;
+
+        border: none;
+        border-top: 1px solid var(--body-color);
+
+        transform: translate(0, 0);
+
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mg01>ul>li:hover ul {
+        display: none;
+        transform: translate(0, 0);
+        opacity: 1;
+        visibility: visible;
+
+        transition: none;
+    }
+
+
+
+    .mg01>ul>li ul a {
+        display: block;
+        min-width: 18rem;
+        font-size: 1.4rem;
+        line-height: 4rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .mg01>ul>li ul>li~li a {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
 
 .wp {
     position: relative;
@@ -425,6 +555,32 @@ body {
     -webkit-background-clip: text; */
 }
 
+.card {
+    background: var(--w-color);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--line-color);
+}
+
+.card>* {
+    padding: 1.6rem;
+}
+
+.card .img_box {
+    padding: 0;
+    overflow: hidden;
+}
+
+.card .img_box img {
+    transform: scale(1);
+    transition: 0.5s;
+
+}
+
+.card:hover .img_box img {
+    transform: scale(1.2);
+}
+
 .st {
     font-size: 2.4rem;
     font-weight: 600;
@@ -461,6 +617,10 @@ body {
 
 .dot_list>* {
     position: relative;
+}
+
+.dot_list a {
+    white-space: nowrap;
 }
 
 .dot_list>*~*::after {
@@ -501,4 +661,73 @@ body {
     border-radius: 50%;
 
     background: var(--color);
+}
+
+.l_list a {
+    white-space: nowrap;
+}
+
+.mb8 {
+    margin-bottom: 0.8rem;
+}
+
+.mb16 {
+    margin-bottom: 1.6rem;
+}
+
+.mb24 {
+    margin-bottom: 2.4rem;
+}
+
+.mb32 {
+    margin-bottom: 3.2rem;
+}
+
+.mb40 {
+    margin-bottom: 4rem;
+}
+
+.mb80 {
+    margin-bottom: 8rem;
+}
+
+
+.mt8 {
+    margin-top: 0.8rem;
+}
+
+.mt16 {
+    margin-top: 1.6rem;
+}
+
+.mt24 {
+    margin-top: 2.4rem;
+}
+
+.mt32 {
+    margin-top: 3.2rem;
+}
+
+.mt40 {
+    margin-top: 4rem;
+}
+
+.mt80 {
+    margin-top: 8rem;
+}
+
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis_a {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
