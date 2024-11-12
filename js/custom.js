@@ -32,11 +32,11 @@ $(function () {
         slidesPerView: 1,
         spaceBetween: 30,
         speed: 800,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
 
-        },
+        // },
 
         pagination: {
             el: '#main_content01 .page',

@@ -1,8 +1,8 @@
 :root {
-    --wide-size: 1700px;
-    --inner-size: 1410px;
-    --gap-size: 30px;
-    --padding-size: 120px;
+    --wide-size: 170rem;
+    --inner-size: 141rem;
+    --gap-size: 3rem;
+    --padding-size: 9.6rem;
 
     --primary-color: #d80000;
     --secondary-color: #ffc400;
@@ -79,13 +79,12 @@ body {
 @media (max-width: 1730px) {
     .w_inner {
         max-width: var(--wide-size);
-        margin: 0 15px;
-        ;
+        margin: 0 1.5rem;
     }
 
     .w_inner.right {
         max-width: calc((100% - var(--wide-size))/2 + var(--wide-size));
-        margin: 0 0 0 15px;
+        margin: 0 1.5rem 0 1.5rem;
     }
 }
 
