@@ -393,7 +393,11 @@
     margin-bottom: 1.6rem;
 }
 
-#footer .footer_bottom span {
+#footer .footer_bottom ul {
+    margin-bottom: 0.4rem;
+}
+
+#footer .footer_bottom ul>li {
     display: inline-block;
     font-size: 1.4rem;
     color: var(--w-color);
@@ -401,6 +405,8 @@
 }
 
 #footer .footer_bottom .copy {
+    margin-top: 1.6rem;
+    color: var(--w-color);
     opacity: 0.5;
 }
 
