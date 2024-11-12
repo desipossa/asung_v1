@@ -396,6 +396,12 @@
 @media (max-width:768px) {
     #footer .footer_bottom .l_list {
         flex-direction: column;
+        gap: 0;
+    }
+
+    #footer .footer_bottom .l_list a {
+        display: block;
+        line-height: 1.5;
     }
 
     #footer .footer_bottom .l_list a::after {
