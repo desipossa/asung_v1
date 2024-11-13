@@ -106,7 +106,27 @@ $(function () {
 
 $(function () {
     $('.moblie_btn').on('click', function () {
+        $(this).toggleClass('on')
         $('.gnb').toggleClass('on')
+    });
+
+
+    $('.gnb').on('wheel touchmove', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+    });
+
+    $('.gnb>ul>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+            $(this).next().slideToggle();
+            $(this).parent().siblings().find('ul').slideUp();
+        }
+    });
+
+    $(window).on('resize', function () {
+        $('.gnb ul ul').removeAttr('style');
+        $('.gnb').removeClass('on')
     })
 })
 
