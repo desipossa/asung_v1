@@ -43,6 +43,11 @@ $(function () {
             clickable: true,
         },
 
+        navigation: {
+            nextEl: '#main_content01 .arrows .next',
+            prevEl: '#main_content01 .arrows .prev',
+        },
+
         breakpoints: {
             640: {
                 slidesPerView: 2,
@@ -74,10 +79,10 @@ $(function () {
 
         // },
 
-        pagination: {
-            el: '#main_content01 .page',
-            clickable: true,
-        },
+        // pagination: {
+        //     el: '#main_content01 .page',
+        //     clickable: true,
+        // },
 
         breakpoints: {
             640: {

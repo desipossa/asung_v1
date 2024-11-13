@@ -156,6 +156,67 @@ body {
 }
 
 
+.contact_box a {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    white-space: nowrap;
+}
+
+.contact_box a i {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--body-color);
+    border-radius: 50%;
+}
+
+.contact_box a i svg {
+    position: relative;
+}
+
+.contact_box a i::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: var(--primary-color);
+    border-radius: 50%;
+
+    opacity: 0.4;
+
+    animation: scale 1s infinite;
+}
+
+
+.contact_box a span {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.contact_box a strong {
+    font-weight: 800;
+    font-size: 3.2rem;
+    color: var(--w-color);
+}
+
+
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+
 .ctl {
     display: flex;
     justify-content: flex-start;
@@ -185,6 +246,16 @@ body {
 .ctl .page.ox span.swiper-pagination-bullet-active {
     width: 8rem;
     transition: 0.5s;
+}
+
+.arrows {
+    position: relative;
+}
+
+.arrows button {
+    width: 4rem;
+    height: 4rem;
+    background: var(--background-color);
 }
 
 .m_icon_link .tb_l {
