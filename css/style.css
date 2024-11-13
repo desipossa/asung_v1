@@ -167,6 +167,14 @@
     border-top: 1px solid var(--line-color);
 }
 
+.mb {
+    display: none !important;
+}
+
+.pb {
+    display: flex !important;
+}
+
 
 @media (max-width:768px) {
     #quick {
@@ -212,6 +220,14 @@
     #quick a~a {
         border-top: none;
         border-left: 1px solid var(--line-color);
+    }
+
+    .mb {
+        display: flex;
+    }
+
+    .pb {
+        display: none;
     }
 }
 

@@ -187,6 +187,56 @@ body {
     transition: 0.5s;
 }
 
+.m_icon_link .tb_l {
+    display: flex;
+    gap: 0.8rem;
+
+    margin-top: 4rem;
+}
+
+.m_icon_link .tb_l strong {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.m_icon_link .tb_l>a {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-bottom: 1.6rem;
+
+    flex: 1;
+
+    background: var(--background-color);
+    border-radius: 0.8rem;
+}
+
+
+
+.m_icon_link .icn {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.m_icon_link .icn01 {
+    background: url(../images/line_iconset_b01.png) -600px -100px;
+}
+
+.m_icon_link .icn02 {
+    background: url(../images/line_iconset_b02.png) -300px -300px;
+}
+
+.m_icon_link .icn03 {
+    background: url(../images/line_iconset_b02.png) -1000px -400px;
+}
+
+.m_icon_link .icn04 {
+    background: url(../img/base/line_iconset_b02.png) -600px -300px;
+}
 
 .mg01 {
     position: relative;
@@ -232,6 +282,10 @@ body {
     line-height: 4rem;
     padding: 0 2rem;
     text-align: center;
+}
+
+.mg01>ul>li ul a:hover {
+    background: var(--background-color);
 }
 
 .mg01>ul>li ul>li~li a {
@@ -395,10 +449,12 @@ body {
     .mg01>ul>li ul a {
         display: block;
         min-width: 18rem;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         line-height: 4rem;
         padding: 0 2rem;
-        text-align: center;
+        text-align: left;
+
+        background: var(--background-color);
     }
 
     .mg01>ul>li ul>li~li a {
@@ -409,6 +465,13 @@ body {
 
 .wp {
     position: relative;
+}
+
+@media (max-width:768px) {
+    .wp {
+        transform: translate();
+    }
+
 }
 
 .wp::before {
@@ -446,6 +509,25 @@ body {
 
     width: 10px;
     height: 10px;
+}
+
+
+@media (max-width:768px) {
+    .wp::before {
+        top: 120%;
+        left: auto;
+        right: 4rem;
+        transform: translate(20%, calc(-50% - 50px));
+
+    }
+
+    .wp::after {
+        top: 120%;
+        left: auto;
+        right: 4rem;
+
+    }
+
 }
 
 .d_btn {
