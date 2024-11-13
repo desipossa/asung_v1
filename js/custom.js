@@ -104,6 +104,12 @@ $(function () {
 })
 
 
+$(function () {
+    $('.moblie_btn').on('click', function () {
+        $('.gnb').toggleClass('on')
+    })
+})
+
 // $(function () {
 //     // Initialize Lenis
 //     const lenis = new Lenis();

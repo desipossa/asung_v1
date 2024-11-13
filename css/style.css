@@ -87,9 +87,9 @@
 
 @media (max-width:768px) {
     .top_banner {
-        position: sticky;
+        /* position: sticky;
         top: 0;
-        z-index: 999;
+        z-index: 999; */
     }
 
     .top_banner .w_inner {
@@ -97,6 +97,18 @@
         align-items: center;
         justify-content: center;
     }
+
+    /* .top_banner .txt {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+
+
+        background: #464646;
+        padding: 0.8rem 1.6rem;
+    } */
 
 
 
@@ -111,6 +123,28 @@
 @media (max-width:768px) {
     .top {
         display: none;
+    }
+}
+
+
+.moblie_btn {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .moblie_btn {
+        display: block;
+
+        position: fixed;
+        top: 16rem;
+        right: 1.6rem;
+        z-index: 1000;
+    }
+}
+
+@media (max-width:500px) {
+    .moblie_btn {
+        top: 14rem;
     }
 }
 
