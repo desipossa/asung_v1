@@ -7,6 +7,8 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+
+
 #header a {
     white-space: nowrap;
 }
@@ -86,29 +88,13 @@
 }
 
 @media (max-width:768px) {
-    .top_banner {
-        /* position: sticky;
-        top: 0;
-        z-index: 999; */
-    }
+
 
     .top_banner .w_inner {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
-    /* .top_banner .txt {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-
-
-        background: #464646;
-        padding: 0.8rem 1.6rem;
-    } */
 
 
 
@@ -135,8 +121,8 @@
     .moblie_btn {
         display: block;
 
-        position: fixed;
-        top: 16rem;
+        position: absolute;
+        top: 4rem;
         right: 1.6rem;
         z-index: 1000;
     }
@@ -144,7 +130,8 @@
 
 @media (max-width:500px) {
     .moblie_btn {
-        top: 14rem;
+        top: 4rem;
+        right: 1.6rem;
     }
 }
 
