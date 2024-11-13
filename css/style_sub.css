@@ -1,0 +1,55 @@
+.sub_page {
+    position: relative;
+}
+
+
+.sub_page .sub_title .w_inner {
+    display: flex;
+    height: 8rem;
+
+    /* justify-content: flex-end; */
+    align-items: center;
+
+    border-bottom: 1px solid var(--line-color);
+
+    margin-bottom: 6.4rem;
+}
+
+
+.sub_page .sub_desc {
+
+    min-height: 1000px;
+}
+
+.sub_page .sub_desc .tit {
+    margin-bottom: 8rem;
+}
+
+.sub_page h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.sub_page .contect {
+    position: absolute;
+    top: 0;
+    right: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+
+    width: 20rem;
+    height: 20rem;
+
+    color: var(--w-color);
+    background: var(--secondary-color);
+    border-radius: 50%;
+
+    transform: translate(0, 50%);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+
+}

@@ -61,6 +61,11 @@ b {
     font-weight: inherit;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
 .blind {
     position: absolute;
     width: 1px;
