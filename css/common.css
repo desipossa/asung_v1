@@ -847,7 +847,6 @@ body {
 
 .tables {
     margin-top: 4rem;
-    width: var(--inner-size);
     border-top: 2px solid var(--color);
     border-bottom: 1px solid var(--color);
     font-size: 15px;

@@ -53,3 +53,7 @@
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
 
 }
+
+.sub_page .page {
+    max-width: var(--inner-size);
+}
