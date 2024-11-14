@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/dsc.css">
+    <style>
+        .product__list__container {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 40px;
+        }
+
+        .product__list__container>* {
+            flex: 1 1 40%;
+            text-align: center;
+        }
+
+
+
+
+        .product__list h3 {
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .product__list strong {
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            display: block;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product__list">
+        <ul class="product__list__container">
+            <li>
+                <figure>
+                    <img src="<?php echo G5_THEME_URL ?>/img/dsc_pro_v01.jpg" alt="<?php echo $mg_title; ?>">
+                </figure>
+                <hr>
+                <figure>
+                    <img src="<?php echo G5_THEME_URL ?>/img/dsc_pro_d01.jpg" alt="<?php echo $mg_title; ?>">
+                </figure>
+                <hr>
+
+                <h3>
+                    AL 대, CARABINER
+                </h3>
+            </li>
+            <li>
+                <figure>
+                    <img src="<?php echo G5_THEME_URL ?>/img/dsc_pro_v01.jpg" alt="<?php echo $mg_title; ?>">
+                </figure>
+                <hr>
+                <figure>
+                    <img src="<?php echo G5_THEME_URL ?>/img/dsc_pro_d01.jpg" alt="<?php echo $mg_title; ?>">
+                </figure>
+                <hr>
+
+                <h3>
+                    AL 대, CARABINER
+                </h3>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

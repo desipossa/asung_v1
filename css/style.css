@@ -383,7 +383,7 @@
 }
 
 #footer .footer_top {
-    padding: 6.4rem 0;
+    padding: 8rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -464,6 +464,14 @@
     opacity: 0.5;
 }
 
+#footer .wp::before {
+    transform: translate(-50%, calc(-50% - 30px));
+}
+
+#footer .wp::after {
+    transform: translate(-50%, calc(-50% - 18px)) rotate(45deg);
+}
+
 @media (max-width:768px) {
 
     #footer .footer_bottom .bt {
@@ -492,7 +500,7 @@
 .to_top {
     position: fixed;
     right: 14rem;
-    bottom: 12rem;
+    bottom: 18rem;
     z-index: 998;
 }
 

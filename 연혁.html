@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/dsc.css">
+    <style>
+        .company__history {
+            text-align: center;
+        }
+
+        .company__history__inner {
+            padding: 10px;
+            border: 2px solid #45606a;
+            border-radius: 5px;
+            background: #fff;
+            font-size: 19px;
+
+            position: relative;
+        }
+
+        .company__history__box_h::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 90px;
+            background: #45606a;
+            margin: 0 auto;
+        }
+
+        .company__history__container {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .company__history__container>* {
+            flex: 0 1 15%;
+        }
+
+        @media (max-width: 768px) {
+            .company__history__container {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+
+            .company__history__container>* {
+                flex: 0 1 25%;
+            }
+        }
+
+        .company__history__container::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #45606a;
+
+            position: absolute;
+            top: 25px;
+            left: 0;
+        }
+
+        .company__history__box_w {
+            position: relative;
+        }
+
+        .company__history__list {
+            padding: 10px 0;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="company__history">
+        <ul class="company__history__container">
+            <li>
+                <div class="company__history__box_w">
+                    <div class="company__history__inner">
+                        1980
+                    </div>
+                    <ul class="company__history__list">
+                        <li>DSC 創立記念日<br />
+                            (1988. 12. 01)<br />
+                            부산시 사상구 모라동</li>
+                        <li>자동차부품 제조</li>
+                        <li>재건양로원 방문(기금)</li>
+                        <li>신규 Item 금형개발</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="company__history__box_w">
+                    <div class="company__history__inner">
+                        1990
+                    </div>
+                    <ul class="company__history__list">
+                        <li>공장 移轉(1998)<br />
+                            부산시 강서구 대저동</li>
+                        <li>자동차부품 제조</li>
+                        <li>정화양로원 방문(기금)</li>
+                        <li>신규 Item 금형개발</li>
+                        <li>안전보호구부품 제조</li>
+                        <li>추락방지대,로립 개발</li>
+                        <li>카라비너 부품 제조</li>
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="company__history__box_w">
+                    <div class="company__history__inner">
+                        2000
+                    </div>
+                    <ul class="company__history__list">
+                        <li>DSC 본사 移轉신축</li>
+                        <li>GND로지스틱스 설립</li>
+                        <li>안전보호구부품 제조</li>
+                        <li>평화의집 방문(기금)</li>
+                        <li>인제대학교 방문(기금)</li>
+                        <li>신규 Item 금형개발</li>
+                        <li>안전모걸이대 실용신안</li>
+                        <li>일반형카라비너 개발</li>
+                        <li>카라비너 실용신안</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="company__history__box_w">
+                    <div class="company__history__inner">
+                        2010
+                    </div>
+                    <ul class="company__history__list">
+                        <li>디에스이노테크 설립</li>
+                        <li>부설 연구소 설립</li>
+                        <li>안전보호구부품 제조</li>
+                        <li>동의대학교 방문(기금)</li>
+                        <li>신규 Item 금형개발</li>
+                        <li>카라비너 디자인 등록</li>
+                        <li>일체형카라비너 개발</li>
+                        <li>스냅형카라비너 개발</li>
+                        <li>타원형카라비너 개발</li>
+                        <li>중형형카라비너 개발</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="company__history__box_w">
+                    <div class="company__history__inner">
+                        2020
+                    </div>
+                    <ul class="company__history__list">
+                        <li>안전보호구부품 제조</li>
+                        <li>(사)인본사회 방문(기금)</li>
+                        <li>신규 Item 금형개발</li>
+                        <li>카라비너 디자인 등록</li>
+                        <li>프로파일행거 개발</li>
+                        <li>특형카라비너 개발</li>
+                        <li>봉형카라비너 개발</li>
+                        <li>자동카라비너 개발</li>
+                        <li>알파카라비너 개발</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+</body>
+
+</html>
