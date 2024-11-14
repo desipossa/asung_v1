@@ -75,6 +75,10 @@ body {
     margin: 0 auto;
 }
 
+.sub_inner {
+    max-width: var(--inner-size);
+}
+
 
 @media (max-width: 1730px) {
     .w_inner {
@@ -127,6 +131,12 @@ body {
 
 .bg {
     background: var(--background-color);
+}
+
+.fx {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .content_fx {

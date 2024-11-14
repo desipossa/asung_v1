@@ -54,6 +54,13 @@
 
 }
 
+@media (max-width:768px) {
+    .sub_page .contect {
+        display: none;
+    }
+}
+
+
 .sub_page .page {
     max-width: var(--inner-size);
 }
